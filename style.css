@@ -9,42 +9,43 @@ body {
 }
 
 #clock {
-    margin-bottom: 2rem;
+    margin: 1rem;
     height: 13rem;
     width: 13rem;
     border-radius: 50%;
-    background: white url(clock.svg) no-repeat center;
-    box-shadow: black 0 0 1rem;
-    background-size: 88%;
-    padding-bottom: 31%;
+    background: white url(horlogeV2.jpg) no-repeat center;
+    box-shadow: gray 0 0 1rem;
+    background-size: 113%;
 }
 
-#clock:after {
+#clockCenter {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+
+#containerHours, #containerMinutes, #containerSeconds, #containerClockCenter {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    height: 13rem;
+    width: 13rem;
+}
+
+#hours, #minutes, #seconds, #clock:after, #clockCenter {
     background: black;
-    border-radius: 50%;
-    content: "";
     position: absolute;
-    left: 22%;
-    top: 16%;
-    width: 5%;
-    height: 5%;
-    z-index: 10;
-}
-
-#containerHours, #containerMinutes, #containerSeconds {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 13rem;
-    width: 13rem;
 }
 
 #hours, #minutes, #seconds {
-    background: black;
-    position: absolute;
     transform-origin: 50% 100%;
+}
+
+#clockCenter {
+    left: 45%;
+    top: 45%;
 }
 
 #hours {
@@ -62,28 +63,8 @@ body {
 }
 
 #seconds {
-    height: 45%;
+    background: lawngreen;
+    height: 48%;
     left: 49.5%;
-    top: 14%;
     width: 1%;
-    z-index: 8;
 }
-
-#containerHours {
-    animation: rotate 43200s infinite linear;
-}
-
-#containerMinutes {
-    animation: rotate 3600s infinite linear;
-}
-
-#containerSeconds {
-    animation: rotate 60s infinite linear;
-}
-
-@keyframes rotate {
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
-
