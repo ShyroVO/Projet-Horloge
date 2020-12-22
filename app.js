@@ -1,8 +1,12 @@
 // Actual Date:
 let dayDate = Date();
 let dateAffichage = document.getElementById('date');
+let actualDate = new Date();
+let actualDateMouth = actualDate.getMonth();
+let actualDateDay = actualDate.getDate();
+let actualDateYear = actualDate.getFullYear();
 
-dateAffichage.innerHTML = dayDate;
+dateAffichage.innerHTML = actualDateDay + " / " + (actualDateMouth+1) + " / " + actualDateYear;
 
 // Clock:
 function clock (){
@@ -10,7 +14,6 @@ function clock (){
     let hours = date.getHours();
     let minutes = date.getMinutes()
     let seconds = date.getSeconds();
-
 
     let timeOut = setTimeout(function (){
 
@@ -45,7 +48,6 @@ function clock (){
         clock();
 
     }, 1000);
-
 
 }
 

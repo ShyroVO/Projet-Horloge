@@ -8,13 +8,23 @@ body {
     font-size: 62.5%;
 }
 
+#container {
+    padding: 1rem;
+    background: #c6ebc9 ;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 0 0 5rem 0;
+    box-shadow: #aa8976 0 0 1rem;
+    border: dotted #aa8976 0.2rem;
+
+}
+
 #clock {
-    margin: 1rem;
     height: 13rem;
     width: 13rem;
     border-radius: 50%;
     background: white url(horlogeV2.jpg) no-repeat center;
-    box-shadow: gray 0 0 1rem;
+    box-shadow: #70af85 0 0 1rem;
     background-size: 113%;
 }
 
@@ -63,7 +73,7 @@ body {
 }
 
 #seconds {
-    background: lawngreen;
+    background: #70af85;
     height: 48%;
     left: 49.5%;
     width: 1%;
