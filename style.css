@@ -60,7 +60,7 @@ body {
 
 #hours {
     height: 20%;
-    left: 48.75%;
+    left: 49%;
     top: 30%;
     width: 2.5%;
 }
@@ -75,6 +75,13 @@ body {
 #seconds {
     background: #70af85;
     height: 48%;
-    left: 49.5%;
+    left: 49%;
     width: 1%;
+}
+
+#minutes {
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+#seconds {
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
 }
