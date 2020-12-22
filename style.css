@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    padding: 1rem;
+}
+
+#clock {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    background: white url(clock.svg) no-repeat center;
+    box-shadow: gray 0 0 1rem;
+}
+
