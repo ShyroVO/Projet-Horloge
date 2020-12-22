@@ -38,7 +38,6 @@ function clock (){
                 elements[j].style.transform = 'rotateZ('+ time[i].angle + 'deg)';
                 //Compatibilité:
                 //elements[k].style.webkitTransform = 'rotateZ('+ hands[j].angle +'deg)';
-
                 if (time[i].time === 'minutes') {
                     elements[j].parentNode.setAttribute('data-second-angle', time[i + 1].angle)
                 }
