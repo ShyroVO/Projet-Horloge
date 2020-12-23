@@ -23,9 +23,9 @@ body {
     height: 13rem;
     width: 13rem;
     border-radius: 50%;
-    background: white url(horlogeV2.jpg) no-repeat center;
+    background: white url(clock.svg) no-repeat center;
     box-shadow: #70af85 0 0 1rem;
-    background-size: 113%;
+    background-size: 90%;
 }
 
 #clockCenter {
